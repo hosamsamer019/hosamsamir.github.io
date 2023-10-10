@@ -45,7 +45,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/WhatsApp\ Image\ 2023-10-05\ at\ 20.24.33_a9af015b.jpg) no-repeat;
+    background: url(images/WhatsApp\ Image\ 2023-10-02\ at\ 22.09.47_c7324eac.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -102,12 +102,14 @@ section{
     margin-bottom: 30px;
 
 }
-.content{
+
+.content {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    flex-direction: wrap;
+    flex-wrap: wrap;
 }
+
 .card {
     background-color: #fff;
     width: 21.25em;
@@ -138,15 +140,76 @@ section{
     font-weight: 700;
     margin: 10px;
 }
-.contact .icon {
-    font-size: 4.5em;
+
+.projects {
+    background-color: #000016;
 }
-.contact .info h3{
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.project-image img{
+    width: 100%
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
     color: #000;
 }
-.contact .info p{
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000;
+}
+
+.contact .info p {
     font-size: 1.5em;
 }
+
 .footer {
     background-color: #000016;
     color: #fff;
@@ -166,6 +229,7 @@ section{
     padding: 0 12px 0 0;
     
 }
+
 @media (max-width:1023px){
     header{
         padding: 12px 20px;
