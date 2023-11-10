@@ -622,3 +622,142 @@ a {
     padding: 10px 16px;
   }
 }
+
+
+  /*img  */
+.img-card2{
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(136deg, rgb(229 190 123) 0%, rgb(142,197,252) 100%)
+}
+.wrapper2{
+  position: relative;
+  width: 700px;
+  height: 400px;
+}
+.wrapper2 .img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.wrapper2 .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  clip-path: circle(0% at 0% 100%);
+  transition: all 0.7s;
+}
+#one:checked ~ .img-1 img{
+  clip-path: circle(150% at 0% 100%);
+}
+#two:checked ~ .img-1 img,
+#two:checked ~ .img-2 img{
+  clip-path: circle(150% at 0% 100%);
+}
+#three:checked ~ .img-1 img,
+#three:checked ~ .img-2 img,
+#three:checked ~ .img-3 img{
+  clip-path: circle(150% at 0% 100%);
+}
+#four:checked ~ .img-1 img,
+#four:checked ~ .img-2 img,
+#four:checked ~ .img-3 img,
+#four:checked ~ .img-4 img{
+  clip-path: circle(150% at 0% 100%);
+}
+#five:checked ~ .img-1 img,
+#five:checked ~ .img-2 img,
+#five:checked ~ .img-3 img,
+#five:checked ~ .img-4 img,
+#five:checked ~ .img-5 img{
+  clip-path: circle(150% at 0% 100%);
+}
+#sex:checked ~ .img-2 img,
+#sex:checked ~ .img-3 img,
+#sex:checked ~ .img-1 img,  
+#sex:checked ~ .img-4 img,
+#sex:checked ~ .img-5 img,
+#sex:checked ~ .img-6 img{  
+  clip-path: circle(150% at 0% 100%);
+}
+#seven:checked ~ .img-1 img,
+#seven:checked ~ .img-2 img,
+#seven:checked ~ .img-3 img,
+#seven:checked ~ .img-4 img,
+#seven:checked ~ .img-5 img,
+#seven:checked ~ .img-6 img,
+#seven:checked ~ .img-7 img{
+  clip-path: circle(150% at 0% 100%);
+}
+#eight:checked ~ .img-1 img,
+#eight:checked ~ .img-2 img,
+#eight:checked ~ .img-3 img,
+#eight:checked ~ .img-4 img,
+#eight:checked ~ .img-5 img,
+#eight:checked ~ .img-6 img,
+#eight:checked ~ .img-7 img,
+#eight:checked ~ .img-8 img{
+  clip-path: circle(150% at 0% 100%);
+}
+#nine:checked ~ .img-1 img,
+#nine:checked ~ .img-2 img,
+#nine:checked ~ .img-3 img,
+#nine:checked ~ .img-4 img,
+#nine:checked ~ .img-5 img,
+#nine:checked ~ .img-6 img,
+#nine:checked ~ .img-7 img,
+#nine:checked ~ .img-8 img,
+#nine:checked ~ .img-9 img{
+  clip-path: circle(150% at 0% 100%);
+}
+#ten:checked ~ .img-1 img,
+#ten:checked ~ .img-2 img,
+#ten:checked ~ .img-3 img,
+#ten:checked ~ .img-4 img,
+#ten:checked ~ .img-5 img,
+#ten:checked ~ .img-6 img,
+#ten:checked ~ .img-7 img,
+#ten:checked ~ .img-8 img,
+#ten:checked ~ .img-9 img,
+#ten:checked ~ .img-10 img{
+  clip-path: circle(150% at 0% 100%);
+}
+.wrapper2 .sliders{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  display: flex;
+}
+.wrapper2 .sliders label{
+  border: 2px solid rgb(142,197,252);
+  width: 13px;
+  height: 13px;
+  margin: 0 3px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#one:checked ~ .sliders label.one,
+#two:checked ~ .sliders label.two,
+#three:checked ~ .sliders label.three,
+#four:checked ~ .sliders label.four,
+#five:checked ~ .sliders label.five,
+#sex:checked ~ .sliders label.sex,
+#seven:checked ~ .sliders label.seven,
+#eight:checked ~ .sliders label.eight,
+#nine:checked ~ .sliders label.nine,
+#ten:checked ~ .sliders label.ten{
+  width: 35px;
+  border-radius: 14px;
+  background: rgb(142,197,252);
+}
+.sliders label:hover{
+  background: rgb(142,197,252);
+}
+input[type="radio"]{
+  display: none;
+}
