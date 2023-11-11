@@ -527,6 +527,7 @@ a {
 }
 .hero .column {
   width: 50%;
+  direction: rtl;
 }
 .buttons {
   display: flex;
